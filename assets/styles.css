@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+
+
+.nav-wrapper-1 a{
+  transition: all ease-in-out 0.5s;
+}
+.nav-wrapper-1 a:hover {
+  text-decoration: underline;
+}
+.link-hover {
+  transition: all ease-in-out 0.3s;
+}
+.fa-chevron-right {
+  transition: all ease-in-out 0.3s;
+}
+.link-bounce:hover .fa-chevron-right{
+  -webkit-transform: translateX(5px);
+	transform: translateX(5px);
+}
+.card-body a {
+  transition: all ease-in-out 0.3s;
+}
+.footer a{
+  transition: all ease-in-out 0.5s;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+.hideToggle {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.showToggle {
+  max-height: 1000px; 
+  transition: max-height 0.3s ease-in;
+}
+
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; 
+  position: absolute;
+  right: 130px;
+  background-color: #f2f2f2;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+
+.dropdown-content.show {
+  max-height: 2000px; 
+  transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+}
+
+
+
+
+
+
+@tailwind utilities;
